@@ -5,11 +5,7 @@
     font-family: Montserrat;
 }
 
-.clearfix{
-  content: "";
-  display: table;
-  clear: both;
-}
+/* STRUTTURA*/
 
 .spotify{
     width: 100%;
@@ -20,6 +16,7 @@
     width: 100%;
     height: calc(100% - 100px);
     background-color: chocolate;
+    overflow: hidden;
 }
 
 footer{
@@ -42,4 +39,82 @@ footer{
     height: 100%;
     width: calc(100% - 250px);
     background-color: chartreuse;
+    overflow-y: auto;
 }
+
+ul{
+    list-style-type: none;
+    font-size: 15px;
+}
+
+.layout{
+    margin-left: 15px;
+}
+
+/* images */
+
+.logo img{
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo{
+    padding: 20px;
+    height: 100px;
+}
+
+.content{
+    padding-top: 120px;
+}
+
+.upgrade-bar{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+.button{
+    margin-right: 280px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    overflow-x: auto;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.fa-home, .fa-search, .fa-book-open{
+    font-size: 28px;
+    vertical-align: middle;
+    line-height: 35px;
+
+}
+
+.playlist{
+    margin-top: 10px ;
+}
+
+.playlist h3{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.fa-plus-square{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.playlist-list{
+    line-height: 30px;
+}
+
