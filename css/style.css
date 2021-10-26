@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.spotify{
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container{
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: chocolate;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+}
+
+.col{
+    float: left;
+}
+
+.left-col{
+    height: 100%;
+    width: 250px;
+    background-color: darkblue;
+}
+
+.right-col{
+    height: 100%;
+    width: calc(100% - 250px);
+    background-color: chartreuse;
+}
