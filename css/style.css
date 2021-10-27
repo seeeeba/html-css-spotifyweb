@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
-    font-weight: 700;
 }
 
 /* STRUTTURA*/
@@ -30,8 +29,6 @@ footer{
 }
 
 .left-col{
-    display: flex;
-    flex-direction: column;
     height: 100%;
     width: 250px;
     background-color: #000000;
@@ -50,13 +47,30 @@ ul{
     font-size: 15px;
 }
 
+.search-list{
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+}
+
 .layout{
     margin-left: 15px;
-    overflow-y: auto;
 }
 
 .white-text{
     color: white;
+}
+
+.button{
+    margin-right: 280px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    overflow-x: auto;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 /* images */
@@ -86,33 +100,21 @@ ul{
     position: fixed;
 }
 
-.button{
-    margin-right: 280px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    display: inline-block;
-    padding: 12px 30px;
-    overflow-x: auto;
-    cursor: pointer;
-}
-
 .button:hover{
     transform: scale(1.2);
 }
 
-.fa-home, .fa-search, .fa-book-open{
+.fa-home, .fa-search, .fa-book-open, .fa-user-circle{
     font-size: 28px;
     vertical-align: middle;
     line-height: 35px;
 
 }
 
-
-
 .playlist{
     margin-top: 20px;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .playlist h3{
@@ -135,8 +137,12 @@ ul{
    height: 100%;
 }
 
-hr{
-    width: 88%;
+.install{
     border-bottom: 1px solid #a3a3a3;
-    margin: 10px 15px;
+    width: 85%;
+    padding-bottom:5px ;
+}
+
+.user{
+    margin: 10px 0 ;
 }
