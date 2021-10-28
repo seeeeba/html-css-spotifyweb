@@ -322,11 +322,13 @@ footer{
 .song-name .author {
     font-size: 14px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .song-name .name {
     font-size: 12px;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .song-name .name:hover {
@@ -352,21 +354,105 @@ footer{
 }
 
 .big-distance{
-    margin: 0 20px;
+    margin: 0 30px;
 }
 
 .commands{
-    width: 60%;
+    width: 65%;
 }
 
 .top-commands{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.top-commands>div{
+    font-size: 20px;
+}
+
+.top-commands> .play-icon{
+    transform: scale(2);
+}
+
+.top-commands>div>i{
+    cursor: pointer;
+}
+
+.bottom-commands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+.music-bar{
+    width: 50%;
+    height: 3px;
+    background-color: #5a5a5a;
+}
+
+.progression-bar{
+    position: relative;
+    width: 14%;
+    height: 3px;
+    background-color: #c1c1c1;
+}
+
+.music-bar:hover{
+    cursor: pointer;
+}
+
+.progression-bar:hover{
+    background-color: #adff2f;
+}
+
+.progression-bar:hover .small-ball{
+    display: block;
 }
 
 
+.small-ball{
+    display: none;
+    position: absolute;
+    top: -6px;
+    right:-5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-volume{
+    width: 130px;
+    height: 3px;
+    background-color: #5a5a5a;
+}
+
+.volume-bar{
+    width: 20%;
+    height: 3px;
+    background-color: white;
+}
+
+.total-volume:hover{
+    cursor: pointer;
+}
+
+.volume-bar:hover{
+    background-color:#adff2f;
+}
+
+.right-section>div>i{
+    cursor: pointer;
+}
 
 /* Responsive tra i 700px e i 1100px */
 
@@ -416,3 +502,4 @@ footer{
     }
 
 }
+
