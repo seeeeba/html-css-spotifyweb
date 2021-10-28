@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
+    font-weight: 700;
+}
+
+img{
+    width: 100%;
 }
 
 /* STRUTTURA*/
@@ -32,7 +37,6 @@ footer{
     height: 100%;
     width: 250px;
     background-color: #000000;
-    color: #a3a3a3;
 }
 
 .right-col{
@@ -73,7 +77,10 @@ ul{
 
 .white-text{
     color: white;
-    padding-left: 12px;
+}
+
+.grey-text{
+    color: #a3a3a3;
 }
 
 .button{
@@ -122,7 +129,9 @@ ul{
     color: #a3a3a3;
 }
 
-
+.left-green > span{
+    padding-left: 12px;
+}
 
 .playlist{
     margin-top: 20px;
@@ -201,3 +210,86 @@ ul{
     transform: translate(-50%, 5px);
 }
 
+/* MUSIC SECTION */
+
+.recently-played{
+    width: 96%;
+    margin: auto;
+    overflow-y: auto;
+}
+
+.title-recent{
+    margin-bottom: 20px;
+}
+
+.music-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Common Music layout */
+
+.music-items{
+    width: calc(100% / 6 - 10px);
+    margin: 0 5px;
+}
+
+.img-asset{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 0.3;
+}
+
+.play-button {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+}
+
+.img-asset:hover .play-button {
+    display: block;
+}
+
+.img-asset:hover {
+    cursor: pointer;
+}
+
+.music-description{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.music-subtitle h4{
+    margin-top: 10px;
+}
+
+.created-for{
+    margin-top: 50px;
+}
+
+.created-for >div{
+    margin: 15px 0;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+@media screen and (){
+    
+}
