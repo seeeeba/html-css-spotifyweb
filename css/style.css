@@ -55,6 +55,16 @@ ul{
     margin-left: 15px;
 }
 
+.disappear:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.playlist-list>.layout>li:hover{
+    color:white;
+    cursor: pointer;
+}
+
 .left-green{
     border-left: 3px solid #adff2f;
 }
@@ -198,6 +208,11 @@ ul{
     padding: 0 10px;
 }
 
+.navigation-list>li:hover{
+    cursor: pointer;
+    color: white;
+}
+
 .navigation-list li:first-child{
     position: relative;
 }
@@ -280,6 +295,10 @@ ul{
     margin-top: 10px;
 }
 
+.music-title:hover{
+    cursor: pointer;
+}
+
 .created-for{
     margin-top: 50px;
 }
@@ -323,6 +342,10 @@ footer{
     font-size: 14px;
     font-weight: bold;
     margin-left: 10px;
+}
+
+.author:hover{
+    cursor: pointer;
 }
 
 .song-name .name {
