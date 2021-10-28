@@ -57,8 +57,23 @@ ul{
     margin-left: 15px;
 }
 
+.left-green{
+    border-left: 3px solid #adff2f;
+}
+
+/* PROVA */
+
+.bottom-green{
+    border-bottom: 3px solid #adff2f;
+    width: 10%;
+    margin: auto;
+}
+
+/* FINE PROVA */
+
 .white-text{
     color: white;
+    padding-left: 12px;
 }
 
 .button{
@@ -85,10 +100,6 @@ ul{
     height: 100px;
 }
 
-.content{
-    padding-top: 120px;
-}
-
 .upgrade-bar{
     display: flex;
     align-items: flex-start;
@@ -108,8 +119,10 @@ ul{
     font-size: 28px;
     vertical-align: middle;
     line-height: 35px;
-
+    color: #a3a3a3;
 }
+
+
 
 .playlist{
     margin-top: 20px;
@@ -146,3 +159,45 @@ ul{
 .user{
     margin: 10px 0 ;
 }
+
+/* RIGHT COL STYLE */
+
+.content{
+    padding-top: 120px;
+}
+
+.navigation-bar{
+    width: 60%;
+    margin: auto;
+    height: 50px;
+}
+
+.navigation-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-list li{
+    color: #6b6e73;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.navigation-list li:first-child{
+    position: relative;
+}
+
+.underline{
+	position: absolute;
+    width: 30%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #adff2f;
+    transform: translate(-50%, 5px);
+}
+
