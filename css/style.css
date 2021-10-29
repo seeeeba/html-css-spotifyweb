@@ -128,6 +128,12 @@ ul{
     position: fixed;
 }
 
+@media  screen and (max-height: 200px) {
+    .upgrade-bar{
+        display: none;
+    }
+}
+
 .button:hover{
     transform: scale(1.2);
 }
